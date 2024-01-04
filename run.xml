@@ -1,0 +1,13 @@
+<suite name="CucumberSuite" parallel="tests" thread-count="4">
+    <test name="Feature1">
+        <classes>
+            <class name="pertRunner"/>
+        </classes>
+    </test>
+    <test name="test2">
+        <classes>
+            <class name="imgRunner"></class>
+        </classes>
+    </test>
+    <!-- Add more tests for other features/scenarios -->
+</suite>
