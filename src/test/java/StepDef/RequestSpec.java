@@ -16,7 +16,7 @@ public class RequestSpec {
         builder.setBaseUri("https://petstore.swagger.io");
         builder.setBasePath("/v2");
         builder.setContentType(ContentType.JSON);
-        //builder.log(LogDetail.ALL);
+        builder.log(LogDetail.ALL);
        //builder.setConfig(RestAssuredConfig.config().logConfig(LogConfig.logConfig().enableLoggingOfRequestAndResponseIfValidationFails(LogDetail.ALL)));
         // builder.setConfig(RestAssuredConfig.config().logConfig(LogConfig.logConfig().blacklistHeader()))
        // builder.setConfig(RestAssuredConfig.config().encoderConfig(EncoderConfig.encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false)))
