@@ -12,7 +12,7 @@
       <dependency>
           <groupId>io.rest-assured</groupId>
           <artifactId>rest-assured</artifactId>
-          <version>5.4.0</version>
+          <version>${rest.version}</version>
           <scope>test</scope>
       </dependency>
       <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
@@ -26,7 +26,7 @@
       <dependency>
           <groupId>io.cucumber</groupId>
           <artifactId>cucumber-java</artifactId>
-          <version>7.15.0</version>
+          <version>${cucumber.version}</version>
           <scope>test</scope>
       </dependency>
 
@@ -51,6 +51,8 @@
 
   </dependencies>
     <properties>
+        <cucumber.version>7.15.0</cucumber.version>
+        <rest.version>5.4.0</rest.version>
         <maven.compiler.source>20</maven.compiler.source>
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
