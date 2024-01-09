@@ -56,19 +56,6 @@
       </dependency>
 
   </dependencies>
-    <suite name="CucumberSuite" parallel="tests" thread-count="6">
-        <test name="Feature1">
-            <classes>
-                <class name="pertRunner"/>
-            </classes>
-        </test>
-        <test name="test2">
-            <classes>
-                <class name="imgRunner"></class>
-            </classes>
-        </test>
-        <!-- Add more tests for other features/scenarios -->
-    </suite>
     <properties>
         <cucumber.version>7.15.0</cucumber.version>
         <rest.version>5.4.0</rest.version>
