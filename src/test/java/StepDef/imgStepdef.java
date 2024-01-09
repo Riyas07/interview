@@ -32,7 +32,7 @@ public class imgStepdef {
         }
         catch (Exception o)
         {
-
+            System.out.println(o.getMessage());
         }
         finally {
             
