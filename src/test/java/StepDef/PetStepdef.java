@@ -16,6 +16,7 @@ import io.restassured.config.LogConfig;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import org.hamcrest.Matchers;
 
 import javax.xml.validation.Schema;
@@ -134,8 +135,6 @@ public class PetStepdef {
             //System.out.println(response);
            i++;
            n++;
-
-
     }
 
 
