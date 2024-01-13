@@ -119,7 +119,7 @@ public class PetStepdef {
     private static String[] status={"available","notavailable","available"};
     static int n=0;
     @Then("trigger the request and validate the responses")
-    public void triggerTheRequestAndValidateTheResponses() throws FileNotFoundException {
+    public void triggerTheRequestAndValidateTheResponses() throws IOException {
 
             new RequestSpec();
             RestAssured.useRelaxedHTTPSValidation();

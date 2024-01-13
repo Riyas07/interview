@@ -9,11 +9,12 @@ import io.restassured.config.RestAssuredConfig;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 
+import java.io.IOException;
+
 public class RequestSpec {
-    RequestSpec()
-    {
+    RequestSpec() throws IOException {
         RequestSpecBuilder builder=new RequestSpecBuilder();
-        builder.setBaseUri("https://petstore.swagger.io");
+        builder.setBaseUri(ProperteyGetter.getInstance().getUrl());
         builder.setBasePath("/v2");
         builder.setContentType(ContentType.JSON);
         builder.log(LogDetail.ALL);
