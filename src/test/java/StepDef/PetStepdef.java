@@ -121,7 +121,6 @@ public class PetStepdef {
     @Then("trigger the request and validate the responses")
     public void triggerTheRequestAndValidateTheResponses() throws IOException {
 
-            new RequestSpec();
             RestAssured.useRelaxedHTTPSValidation();
             int response=  given(requestSpecification)
                     //.filter(new ResponseLoggingFilter(LogDetail.BODY,new PrintStream("print/print.txt")))

@@ -1,4 +1,4 @@
-<suite name="CucumberSuite" parallel="tests" thread-count="6">
+<suite name="CucumberSuite" >
     <test name="Feature1">
         <classes>
             <class name="pertRunner"/>
@@ -7,6 +7,11 @@
     <test name="test2">
         <classes>
             <class name="imgRunner"></class>
+        </classes>
+    </test>
+    <test name="testng">
+        <classes>
+            <class name="StepDef.testngs"/>
         </classes>
     </test>
     <!-- Add more tests for other features/scenarios -->
